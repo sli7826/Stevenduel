@@ -1,5 +1,9 @@
 package duel;
 
-public class CharacterB {
-
+public class CharacterB
+{
+	public CharacterB() 
+	{
+		
+	}
 }
