@@ -1,5 +1,7 @@
 package duel;
 
 public class CharacterA {
-	//d
+	public CharacterA() {
+		
+	}
 }
