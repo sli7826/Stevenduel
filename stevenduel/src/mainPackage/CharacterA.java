@@ -1,5 +1,5 @@
 package mainPackage;
 
 public class CharacterA {
-	ad
+	//d
 }
