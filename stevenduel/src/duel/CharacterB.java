@@ -2,7 +2,7 @@ package duel;
 
 public class CharacterB implements Dueler
 {
-	private int HP;
+	private int hp;
 	
 	public CharacterB() 
 	{
@@ -18,11 +18,11 @@ public class CharacterB implements Dueler
 	}
 	public int getHP()
 	{
-		return HP;
+		return hp;
 	}
-	public boolean determineIfOpponentIsFair(Dueler d, int HP) 
+	public boolean determineIfOpponentIsFair(Dueler d, int hp) 
 	{
-		if(d.getHP() == HP)
+		if(d.getHP() == hp)
 		{
 			return true;
 		}
@@ -31,8 +31,8 @@ public class CharacterB implements Dueler
 			return false;
 		}
 	}
-	public void setStartingHP(int HP) 
+	public void setStartingHP(int hp) 
 	{
-		this.HP = HP;
+		this.hp = hp;
 	}
 }
