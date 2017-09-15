@@ -29,6 +29,7 @@ public class CharacterA implements Dueler{
 		else {
 			if(round==0) {
 				load=true;
+				round++;
 				return 0;
 			}
 			private int Interger(Math.random()*4);
