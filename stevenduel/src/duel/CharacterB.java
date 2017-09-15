@@ -35,4 +35,12 @@ public class CharacterB implements Dueler
 	{
 		this.hp = hp;
 	}
+	public int getAction(Object Caller)
+	{
+		return (int)(Math.floor((Math.random()*4)));		
+	}
+	public void hit(Object Caller)
+	{
+		
+	}
 }
