@@ -21,4 +21,7 @@ public class CharacterA implements Dueler{
 			return true;
 		return false;
 	}
+	public int getAction(Object caller) {
+		
+	}
 }
