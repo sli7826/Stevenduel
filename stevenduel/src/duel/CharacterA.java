@@ -1,7 +1,9 @@
 package duel;
 
 public class CharacterA implements Dueler{
-	int hp;
+	private int hp;
+	private int round = 0;
+	private boolean load=false;
 	public CharacterA() {	
 	}
 	public void taunt() {
@@ -22,6 +24,16 @@ public class CharacterA implements Dueler{
 		return false;
 	}
 	public int getAction(Object caller) {
-		
+		if(!(caller instanceof Duel))
+			return 3;
+		else {
+			if(round==0) {
+				load=true;
+				return 0;
+			}
+			private int Interger(Math.random()*4);
+						
+		}
+				
 	}
 }
