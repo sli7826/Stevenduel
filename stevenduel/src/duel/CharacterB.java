@@ -31,4 +31,8 @@ public class CharacterB implements Dueler
 			return false;
 		}
 	}
+	public void setStartingHP(int HP) 
+	{
+		this.HP = HP;
+	}
 }
