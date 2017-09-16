@@ -14,7 +14,7 @@ public class CharacterB implements Dueler
 	}
 	public void taunt()
 	{
-		System.out.println("insert taunt");
+		System.out.println("Come at me");
 	}
 	public int getHP()
 	{
