@@ -49,7 +49,7 @@ public class CharacterA implements Dueler{
 		}						
 	}
 	public void hit(Object caller) {
-		if(!(caller instanceof Duel))
+		if((caller instanceof Duel))
 			hp-=10;
 	}
 }
