@@ -2,7 +2,7 @@ package duel;
 
 public class CharacterA implements Dueler{
 	private int hp;
-	private int round = 0;
+	private boolean round = false;
 	private boolean load=false;
 	public CharacterA() {	
 	}
@@ -27,14 +27,29 @@ public class CharacterA implements Dueler{
 		if(!(caller instanceof Duel))
 			return 3;
 		else {
-			if(round==0) {
+			if(!round) {
+				round=true;
 				load=true;
-				round++;
 				return 0;
 			}
-			private int Interger(Math.random()*4);
-						
-		}
-				
+			if(load) {
+				if(Math.random()>.5) {
+					load=false;
+					return 1;
+				}
+				return 2;
+			}
+			else {
+				if(Math.random()>.5) {
+					load=true;
+					return 0;
+				}
+				return 2;
+			}
+		}						
+	}
+	public void hit(Object caller) {
+		if(!(caller instanceof Duel))
+			hp-=10;
 	}
 }
