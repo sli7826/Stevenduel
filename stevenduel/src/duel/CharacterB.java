@@ -41,10 +41,10 @@ public class CharacterB implements Dueler
 	}
 	public void hit(Object Caller)
 	{
-	/*	if ( got hit == true)
+		if (Caller instanceof Duel)
 		{
 			hp = hp - 10;
 		}
-	*/
+	
 	}
 }
