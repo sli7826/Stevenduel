@@ -2,9 +2,11 @@ package duel;
 
 public class CharacterA implements Dueler{
 	private int hp;
-	private boolean round = false;
-	private boolean load=false;
-	public CharacterA() {	
+	private boolean round;
+	private boolean load;
+	public CharacterA() {
+		round = false;
+		load = false;
 	}
 	public void taunt() {
 		System.out.println("You Suck.");
